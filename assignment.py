@@ -290,10 +290,10 @@
 
 # results = calculate_grades_and_remarks(students_scores)
 
-# for student, subjects in results.items():
-#     print(f"Results for {student}:")
-#     for subject, details in subjects.items():
-#         print(f"  {subject}: Total Score = {details['total_score']}, Grade = {details['grade']}, Remark = {details['remark']}")
-#     print()
+for student, subjects in results.items(): # type: ignore
+    print(f"Results for {student}:")
+    for subject, details in subjects.items():
+        print(f"  {subject}: Total Score = {details['total_score']}, Grade = {details['grade']}, Remark = {details['remark']}")
+    print()
 
 
